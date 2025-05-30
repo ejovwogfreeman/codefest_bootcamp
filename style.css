@@ -1,0 +1,51 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("img/software-for-children.jpg") no-repeat center center / cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 700px;
+}
+header h1 {
+  /* font-size: 3rem; */
+  font-weight: bold;
+}
+header p {
+  font-size: 1.2rem;
+}
+.section-title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.btn-section {
+  margin: 10px;
+}
+footer {
+  background: #333;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #f66607;
+  border: 1px solid #f66607;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #de5d06;
+  border: 1px solid #de5d06;
+  color: white;
+}
