@@ -49,3 +49,11 @@ footer {
   border: 1px solid #de5d06;
   color: white;
 }
+
+footer .icons a {
+  background-color: white !important;
+}
+
+footer .icons a:hover {
+  background-color: #de5d06 !important;
+}

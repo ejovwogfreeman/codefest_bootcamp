@@ -12,14 +12,19 @@
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#"
-          ><img src="img/logo.png" alt="" width="100px"
+          ><img src="img/logo.png" alt="logo" width="100px"
         /></a>
         <button
           class="navbar-toggler"
@@ -55,145 +60,248 @@
     </nav>
 
     <!-- Header Banner -->
-    <header>
+    <header class="py-5 text-center bg-warning" data-aos="fade-down">
       <div class="container">
-        <div>
-          <h1>Codefest Summer Bootcamp 2025 (Season 7)</h1>
-          <h4>Theme: (Inspiring Young Innovators)</h4>
-          <div class="mt-4">
-            <a href="#register" class="btn btn-warning btn-lg btn-section"
-              >Register Now</a
-            >
-            <!-- <a href="#" class="btn btn-outline-light btn-lg btn-section"
-              >Download Brochure</a
-            >
-            <a href="#" class="btn btn-outline-light btn-lg btn-section"
-              >Partner (School)</a
-            >
-            <a href="#" class="btn btn-outline-light btn-lg btn-section"
-              >Partner (Company)</a
-            > -->
-          </div>
-        </div>
+        <h1>Codefest Summer Bootcamp 2025 (Season 7)</h1>
+        <h4>(Inspiring Young Innovators)</h4>
+        <a href="#register" class="btn btn-warning btn-lg mt-4">Register Now</a>
       </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="container mt-5">
-      <h2 class="section-title">What is Codefest Summer Bootcamp?</h2>
-      <p class="text-center">
-        Codefest Summer Bootcamp is an exciting 2-week STEM training and
-        innovation program designed to empower kids and teens (ages 10–16) with
-        real-world skills in coding, artificial intelligence, robotics, and
-        creative problem-solving. This is the 7th edition. It’s more than just
-        learning — it’s a journey into the future!
-      </p>
-      <p class="text-center">
-        A fun, hands-on tech experience for kids & teens (ages 10–16) to learn
-        coding, AI, robotics, and showcase their creativity at the Innovation
-        Expo!
-      </p>
+    <section
+      id="about"
+      class="container mt-5 d-md-flex align-items-center py-5"
+    >
+      <div style="flex: 1" data-aos="fade-right">
+        <img src="img/about.jpg" alt="" class="rounded w-100" />
+      </div>
+      <div style="flex: 1" class="mt-3 ms-md-3" data-aos="fade-left">
+        <h2>What is Codefest Summer Bootcamp?</h2>
+        <p>
+          Codefest Summer Bootcamp is an exciting 2-week STEM training and
+          innovation program designed to empower kids and teens (ages 10–16)
+          with real-world skills in coding, artificial intelligence, robotics,
+          and creative problem-solving. This is the 7th edition. It’s more than
+          just learning — it’s a journey into the future!
+        </p>
+        <p>
+          A fun, hands-on tech experience for kids & teens (ages 10–16) to learn
+          coding, AI, robotics, and showcase their creativity at the Innovation
+          Expo!
+        </p>
+      </div>
     </section>
 
     <!-- What They'll Learn -->
-    <section id="learn" class="container mt-5">
-      <h2 class="section-title">What They'll Learn</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <h4>STEM Activities</h4>
-          <ul>
-            <li>Coding</li>
-            <li>Robotics</li>
-            <li>Science Experiments</li>
-            <li>Math Challenges</li>
-            <li>Artificial Intelligence</li>
-          </ul>
+    <div class="bg-light py-5">
+      <section id="learn" class="container my-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">What They'll Learn</h2>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in">
+            <div class="card h-100 shadow-sm">
+              <img src="img/about.jpg" class="card-img-top" alt="STEM" />
+              <div class="card-body">
+                <h5 class="card-title">STEM Activities</h5>
+                <ul class="list-unstyled">
+                  <li>✅ Coding</li>
+                  <li>✅ Robotics</li>
+                  <li>✅ Science Experiments</li>
+                  <li>✅ Math Challenges</li>
+                  <li>✅ Artificial Intelligence</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="card h-100 shadow-sm">
+              <img src="img/about.jpg" class="card-img-top" alt="Creative" />
+              <div class="card-body">
+                <h5 class="card-title">Creative Activities</h5>
+                <ul class="list-unstyled">
+                  <li>✅ Digital Art</li>
+                  <li>✅ Writing Workshop</li>
+                  <li>✅ Music / Dance / Arts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="card h-100 shadow-sm">
+              <img src="img/about.jpg" class="card-img-top" alt="Life Skills" />
+              <div class="card-body">
+                <h5 class="card-title">Life Skills</h5>
+                <ul class="list-unstyled">
+                  <li>✅ Leadership</li>
+                  <li>✅ Time Management</li>
+                  <li>✅ Goal Setting</li>
+                  <li>✅ Entrepreneurship</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="card h-100 shadow-sm">
+              <img src="img/about.jpg" class="card-img-top" alt="Other" />
+              <div class="card-body">
+                <h5 class="card-title">Other Activities</h5>
+                <ul class="list-unstyled">
+                  <li>✅ Indoor Games</li>
+                  <li>✅ Debates / Discussions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-3">
-          <h4>Creative Activities</h4>
-          <ul>
-            <li>Digital Art</li>
-            <li>Writing Workshop</li>
-            <li>Music / Dance / Arts</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h4>Life Skills</h4>
-          <ul>
-            <li>Leadership Development</li>
-            <li>Time Management</li>
-            <li>Goal Setting</li>
-            <li>Entrepreneurship</li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5>Other Activities:</h5>
-          <ul>
-            <li>Indoor Games</li>
-            <li>Debates or Discussions</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Innovation Expo -->
-    <section id="expo" class="bg-light py-5 mt-5">
-      <div class="container">
-        <h2 class="section-title">Innovation Expo & Competitions</h2>
+    <section id="expo" class="py-5 mt-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center">Innovation Expo & Competitions</h2>
         <p class="text-center">
-          Final Day Project Showcase – parents, mentors, and the public are
-          invited!
+          Parents & mentors are invited to our final day project showcase!
         </p>
-        <ul>
-          <li><strong>Coding:</strong> Games, animations & web projects</li>
-          <li><strong>Robotics:</strong> Build & program real robots</li>
-          <li>
-            <strong>Tech Innovation:</strong> Design, prototype, and pitch ideas
-          </li>
-          <li>
-            <strong>Soft Skills:</strong> Teamwork, communication, presentation
-            & leadership
-          </li>
-        </ul>
+        <div class="row g-4 mt-4">
+          <div class="col-lg-3 col-md-6" data-aos="flip-left">
+            <div class="card h-100 shadow-sm">
+              <img src="img/about.jpg" class="card-img-top" alt="Coding" />
+              <div class="card-body">
+                <h5 class="card-title">Coding</h5>
+                <p>Games, animations & web projects</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="flip-left"
+            data-aos-delay="100"
+          >
+            <div class="card h-100 shadow-sm">
+              <img src="img/about.jpg" class="card-img-top" alt="Robotics" />
+              <div class="card-body">
+                <h5 class="card-title">Robotics</h5>
+                <p>Build & program real robots</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="flip-left"
+            data-aos-delay="200"
+          >
+            <div class="card h-100 shadow-sm">
+              <img src="img/about.jpg" class="card-img-top" alt="Innovation" />
+              <div class="card-body">
+                <h5 class="card-title">Tech Innovation</h5>
+                <p>Design, prototype, and pitch ideas</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6"
+            data-aos="flip-left"
+            data-aos-delay="300"
+          >
+            <div class="card h-100 shadow-sm">
+              <img src="img/about.jpg" class="card-img-top" alt="Skills" />
+              <div class="card-body">
+                <h5 class="card-title">Soft Skills</h5>
+                <p>Teamwork, communication & leadership</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Enrollment Info -->
-    <section class="container mt-5">
-      <h2 class="section-title">Who Can Enroll?</h2>
-      <p><strong>Age Group:</strong> 10 to 16 years</p>
-      <p>
-        <strong>Experience Level:</strong> No prior experience needed — just
-        curiosity and creativity!
-      </p>
-      <ul>
-        <li><strong>Explorers:</strong> 10–13 yrs</li>
-        <li><strong>Inventors:</strong> 14–16 yrs</li>
-      </ul>
-    </section>
+    <!-- Who Can Enroll -->
+    <div class="bg-light py-5">
+      <section class="container my-5 d-md-flex align-items-center">
+        <div style="flex: 1" data-aos="fade-right">
+          <img src="img/about.jpg" class="rounded w-100" alt="" />
+        </div>
+        <div style="flex: 1" class="mt-3 ms-md-3" data-aos="fade-left">
+          <h2>Who Can Enroll?</h2>
+          <p><strong>Age Group:</strong> 10 to 16 years</p>
+          <p>
+            <strong>Experience Level:</strong> None needed — just curiosity!
+          </p>
+          <ul>
+            <li><strong>Explorers:</strong> 10–13 yrs</li>
+            <li><strong>Inventors:</strong> 14–16 yrs</li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
     <!-- Schedule -->
-    <section class="container mt-5">
-      <h2 class="section-title">Schedule</h2>
-      <ul>
-        <li><strong>Duration:</strong> 2 Weeks (August 2025)</li>
-        <li><strong>Time:</strong> 10:00 AM – 2:00 PM (Mon–Fri)</li>
-        <li><strong>Venue:</strong> Approved Centres (with Virtual Option)</li>
-        <li>
-          <strong>Demo Day:</strong> Final day project showcase & celebration
-        </li>
-      </ul>
+    <section class="container mt-5 text-center" data-aos="fade-up">
+      <h2 class="text-center mb-4">Schedule</h2>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Duration</h5>
+              <p class="card-text">2 Weeks (August 2025)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Time</h5>
+              <p class="card-text">10:00 AM – 2:00 PM (Mon–Fri)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Venue</h5>
+              <p class="card-text">Approved Centres or Online</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Demo Day</h5>
+              <p class="card-text">Final day showcase & celebration</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Registration -->
-    <section id="register" class="bg-warning py-5 mt-5">
-      <div class="container">
-        <h2 class="section-title">Registration Details</h2>
-        <ul>
+    <section id="register" class="bg-warning py-5 mt-5" data-aos="zoom-in">
+      <div class="container text-center">
+        <h2>Registration Details</h2>
+        <ul class="list-unstyled">
           <li><strong>Fee:</strong> N50,000 – Early Bird: N45,000</li>
           <li>
-            Includes STEM kits, branded T-shirt, software, certificate,
-            Innovation Expo access, and STEM tour
+            Includes kits, T-shirt, software, certificate, Expo access, and STEM
+            tour
           </li>
         </ul>
         <p class="text-danger"><strong>Limited Slots Available!</strong></p>
@@ -201,31 +309,79 @@
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="container mt-5">
-      <h2 class="section-title">What Parents & Students Say</h2>
-      <blockquote class="blockquote">
-        “My daughter built her first robot at Codefest. She hasn’t stopped
-        talking about it!”
-        <footer class="blockquote-footer">Mrs. Eze, Parent</footer>
-      </blockquote>
-      <blockquote class="blockquote">
-        “I learned how to code games and even won multiple awards!”
-        <footer class="blockquote-footer">Basil Okpara Jr</footer>
-      </blockquote>
+    <!-- Testimonial Section -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">What Parents & Students Say</h2>
+
+      <div
+        id="testimonialCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner bg-light p-5 rounded shadow-sm">
+          <div class="carousel-item active">
+            <blockquote class="blockquote text-center">
+              <p class="mb-4">
+                “My daughter built her first robot at Codefest. She hasn’t
+                stopped talking about it!”
+              </p>
+              <div class="blockquote-footer">
+                Mrs. Eze, <cite title="Parent">Parent</cite>
+              </div>
+            </blockquote>
+          </div>
+
+          <div class="carousel-item">
+            <blockquote class="blockquote text-center">
+              <p class="mb-4">
+                “I learned how to code games and even won multiple awards!”
+              </p>
+              <div class="blockquote-footer">Basil Okpara Jr</div>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-dark rounded-circle"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#testimonialCarousel"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-dark rounded-circle"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
 
     <!-- Partners -->
-    <section class="container mt-5">
-      <h2 class="section-title">Partners & Sponsors</h2>
-      <p>Join us in supporting the next generation of tech leaders.</p>
-      <p>[Logos Here]</p>
-      <a href="#" class="btn btn-outline-primary">Become a Sponsor</a>
-    </section>
+    <div class="bg-light py-5">
+      <section class="container mt-5">
+        <h2 class="text-center mb-4">Partners & Sponsors</h2>
+        <p>Join us in supporting the next generation of tech leaders.</p>
+        <p>[Logos Here]</p>
+        <a href="#" class="btn btn-outline-primary">Become a Sponsor</a>
+      </section>
+    </div>
 
     <!-- FAQs -->
     <section id="faqs" class="container mt-5">
-      <h2 class="section-title">FAQs</h2>
+      <h2 class="text-center mb-4">FAQs</h2>
       <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -316,10 +472,44 @@
       <div class="container">
         <p>Ready to spark your child’s passion for STEM?</p>
         <a href="#register" class="btn btn-light">Register Today</a>
+        <div class="icons text-center mt-3">
+          <a
+            class="btn btn-square me-1"
+            href="https://www.facebook.com/share/12JchYDaK2A/"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a class="btn btn-square me-1" href=""
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-square me-1"
+            href="https://www.linkedin.com/company/106284737/admin/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            class="btn btn-square me-1"
+            href="https://www.instagram.com/periodslayinitiative?igsh=bWNlY3BxYmF5cGZz"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-square me-1"
+            href="https://youtube.com/@periodslaytv?si=Y-VRVCNirVKOcTVA"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
         <p class="mt-3">&copy; 2025 Codefest Bootcamp. All rights reserved.</p>
       </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
   </body>
 </html>
