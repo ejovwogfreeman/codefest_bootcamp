@@ -71,3 +71,9 @@ blockquote img {
   border: 10px solid #f66607;
   margin-bottom: 10px;
 }
+
+.back-icon {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 50%;
+}
