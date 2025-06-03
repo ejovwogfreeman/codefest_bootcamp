@@ -7,7 +7,7 @@
 
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("img/software-for-children.jpg") no-repeat center center / cover;
+    url("img/bg.jpg") no-repeat center center / cover;
   color: white;
   display: flex;
   align-items: center;
@@ -56,4 +56,18 @@ footer .icons a {
 
 footer .icons a:hover {
   background-color: #de5d06 !important;
+}
+
+.icon-primary {
+  color: #f66607 !important;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+blockquote img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 10px solid #f66607;
+  margin-bottom: 10px;
 }
