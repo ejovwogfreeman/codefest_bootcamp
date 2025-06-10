@@ -164,25 +164,25 @@ document
   });
 
 // Counter animation for hero stats
-function animateCounters() {
-  const counters = document.querySelectorAll(".stat-number");
+// function animateCounters() {
+//   const counters = document.querySelectorAll(".stat-number");
 
-  counters.forEach((counter) => {
-    const target = parseInt(counter.innerText);
-    const increment = target / 100;
-    let current = 0;
+//   counters.forEach((counter) => {
+//     const target = parseInt(counter.innerText);
+//     const increment = target / 100;
+//     let current = 0;
 
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        counter.innerText = target;
-        clearInterval(timer);
-      } else {
-        counter.innerText = Math.floor(current);
-      }
-    }, 20);
-  });
-}
+//     const timer = setInterval(() => {
+//       current += increment;
+//       if (current >= target) {
+//         counter.innerText = target;
+//         clearInterval(timer);
+//       } else {
+//         counter.innerText = Math.floor(current);
+//       }
+//     }, 20);
+//   });
+// }
 
 // Mobile menu improvements
 const navbarToggler = document.querySelector(".navbar-toggler");
